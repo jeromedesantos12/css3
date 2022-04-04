@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Filter</title>
+	<style>
+
+		body {
+			text-align: center;
+		}
+
+		/*
+		FILTER CSS3 = 
+		Hardware Acceleration 'not' Browser
+
+		blur(px)
+		brightness(angka | %)
+		contrast(angka | %)
+		saturate(angka	| %)
+		greyscale(angka | %)
+		sepia(angka | %)
+		hue-rotate(deg)
+		invert(angka | %)
+		opacity(angka | %) 
+		drop-shadow(sama seperti box-shadow)
+
+		Interaktif CSS Filter Effects
+		html5-demos.appspot.com/static/css/filters/index.html
+		*/
+
+		img { 
+			width: 35%;
+/*			filter: blur(10px);*/
+/*			filter: brightness(200%);*/
+/*			filter: contrast(200%);*/
+/*			filter: saturate(200%);*/
+/*			filter: grayscale(100%);*/
+/*			filter: sepia(100%);*/
+/*			filter: hue-rotate(100deg);*/
+/*			filter: invert(100%);*/
+/*			filter: opacity(.5);*/
+/*			filter: drop-shadow(5px 5px 5px black);*/
+
+			/*
+			HASILNYA BEDA DENGAN YANG INI
+			box-shadow: 5px 5px 5px black;
+			*/
+
+			filter: blur(10px) grayscale(1);
+		}
+
+		img:hover {
+			filter: blur(0) grayscale(0);
+		}
+
+		h1 {
+			filter: drop-shadow(5px 5px 5px black);
+		}
+
+	</style>	
+</head>
+<body>
+	<img src="img/austin.png" alt="Web Programming UNPAS">
+	<h1>Austin</h1>
+</body>
+</html>
